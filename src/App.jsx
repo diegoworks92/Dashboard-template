@@ -14,6 +14,7 @@ import Home from "./pages/admin/Home";
 import Profile from "./pages/admin/Profile";
 import Chat from "./pages/admin/Chat";
 import Error404 from "./pages/Error404";
+import Support from "./pages/admin/Support";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="profile" element={<Profile />} />
           <Route path="chat" element={<Chat />} />
+          <Route path="support" element={<Support />} />
         </Route>
         <Route path="*" element={<Error404 />} />
       </Routes>

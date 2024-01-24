@@ -4,7 +4,7 @@ import {
   RiSettings3Line,
   RiLogoutCircleRLine,
   RiThumbUpLine,
-  RiChat3Line,
+  RiChat2Line,
 } from "react-icons/ri";
 import { Menu, MenuItem, MenuButton } from "@szhsin/react-menu";
 import "@szhsin/react-menu/dist/index.css";
@@ -27,7 +27,7 @@ const Header = () => {
           }
           transition
           align="center"
-          arrow
+          /* arrow */
           menuClassName="bg-secondary-100 p-4"
         >
           <h1 className="text-gray-300 text-center font-medium">
@@ -36,17 +36,17 @@ const Header = () => {
           <hr className="my-6 border-gray-500" />
           <MenuItem className="p-0 hover:bg-transparent">
             <Link
-              to="/"
+              to=""
               className="text-gray-300 flex flex-1 items-center gap-4 py-2 px-4 hover:bg-secondary-900 transition-colors rounded-lg"
             >
               <img
-                src="https://img.freepik.com/foto-gratis/negocio-joven-empresario-profesional-gafas-sonriendo-camara-brazo-cruzado-sobre-pecho_1258-26377.jpg"
+                src="https://younghollywood.com/images/stories/newsIMG/wenn/20111021/wenn2471850_46_2098_4.webp"
                 className="w-8 h-8 object-cover rounded-full"
               />
               <div className="text-sm flex flex-col">
                 <div className="flex items-center justify-between gap-4">
-                  <span>Diego Reyes</span>
-                  <span className="text-[8px]">{date}</span>
+                  <span>Mark Hoppus</span>
+                  <span className="text-[8px] ml-auto">{date}</span>
                 </div>
                 <p className="text-gray-500 text-xs">Lorem ipsum dolor...</p>
               </div>
@@ -54,7 +54,7 @@ const Header = () => {
           </MenuItem>
           <MenuItem className="p-0 hover:bg-transparent">
             <Link
-              to="/"
+              to=""
               className="text-gray-300 flex flex-1 items-center gap-4 py-2 px-4 hover:bg-secondary-900 transition-colors rounded-lg"
             >
               <RiThumbUpLine className="p-2 bg-blue-200 text-blue-700 box-content rounded-full" />
@@ -64,23 +64,25 @@ const Header = () => {
                   <span className="text-[8px]">{date}</span>
                 </div>
                 <p className="text-gray-500 text-xs">
-                  Diego likes your post...
+                  Tom DeLonge likes your post...
                 </p>
               </div>
             </Link>
           </MenuItem>
           <MenuItem className="p-0 hover:bg-transparent">
             <Link
-              to="/"
+              to=""
               className="text-gray-300 flex flex-1 items-center gap-4 py-2 px-4 hover:bg-secondary-900 transition-colors rounded-lg"
             >
-              <RiChat3Line className="p-2 bg-yellow-200 text-yellow-700 box-content rounded-full" />
+              <RiChat2Line className="p-2 bg-yellow-200 text-yellow-700 box-content rounded-full" />
               <div className="text-sm flex flex-col">
                 <div className="flex items-center justify-between gap-4">
                   <span>New commente</span>
                   <span className="text-[8px]">{date}</span>
                 </div>
-                <p className="text-gray-500 text-xs">Diego commented on...</p>
+                <p className="text-gray-500 text-xs">
+                  Travis Barker commented on...
+                </p>
               </div>
             </Link>
           </MenuItem>
@@ -107,7 +109,7 @@ const Header = () => {
             </MenuButton>
           }
           align="end"
-          arrow
+          /* arrow */
           /*           arrowClassName="bg-secondary-100" */
           transition
           menuClassName="bg-secondary-100 p-4"
@@ -115,7 +117,7 @@ const Header = () => {
           {" "}
           <MenuItem className="p-0 hover:bg-transparent">
             <Link
-              to="/perfil"
+              to="/profile"
               className="rounded-lg transition-colors text-gray-300 hover:bg-secondary-900 flex items-center gap-x-4 py-2 px-6 flex-1"
             >
               <img
@@ -133,7 +135,7 @@ const Header = () => {
           <hr className="my-4 border-gray-500" />
           <MenuItem className="p-0 hover:bg-transparent">
             <Link
-              to="/setting"
+              to=""
               className="rounded-lg transition-colors text-gray-300 hover:bg-secondary-900 flex items-center gap-x-4 py-2 px-6 flex-1"
             >
               <RiSettings3Line /> Setting
@@ -141,7 +143,7 @@ const Header = () => {
           </MenuItem>
           <MenuItem className="p-0 hover:bg-transparent">
             <Link
-              to="/log-out"
+              to="/login"
               className="rounded-lg transition-colors text-gray-300 hover:bg-secondary-900 flex items-center gap-x-4 py-2 px-6 flex-1"
             >
               <RiLogoutCircleRLine /> Log out

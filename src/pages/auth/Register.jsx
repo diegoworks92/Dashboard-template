@@ -15,7 +15,7 @@ const Register = () => {
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="bg-secondary-100 p-8 rounded-xl shadow-2xl w-auto lg:w-[450px]">
         <h1 className="text-3xl text-center uppercase font-bold tracking-[5px] text-white mb-8">
-          Crear <span className="text-primary">cuenta</span>
+          Create <span className="text-primary">account</span>
         </h1>
         <form className="mb-8">
           <button className="flex items-center justify-center py-3 px-4 gap-4 bg-secondary-900 w-full rounded-full mb-8 text-gray-100">
@@ -23,14 +23,14 @@ const Register = () => {
               src="https://rotulosmatesanz.com/wp-content/uploads/2017/09/2000px-Google_G_Logo.svg_.png"
               className="w-4 h-4"
             />
-            Registrate con Google
+            Register with Google
           </button>
           <div className="relative mb-4">
             <RiUserLine className="absolute top-1/2 -translate-y-1/2 left-2 text-primary" />
             <input
               type="text"
               className="py-3 pl-8 pr-4 bg-secondary-900 w-full outline-none rounded-lg"
-              placeholder="Nombre(s)"
+              placeholder="First name(s)"
             />
           </div>
           <div className="relative mb-4">
@@ -38,7 +38,7 @@ const Register = () => {
             <input
               type="text"
               className="py-3 pl-8 pr-4 bg-secondary-900 w-full outline-none rounded-lg"
-              placeholder="Apellidos"
+              placeholder="Last name(s)"
             />
           </div>
           <div className="relative mb-4">
@@ -46,7 +46,7 @@ const Register = () => {
             <input
               type="email"
               className="py-3 pl-8 pr-4 bg-secondary-900 w-full outline-none rounded-lg"
-              placeholder="Correo electrónico"
+              placeholder="Email"
             />
           </div>
           <div className="relative mb-4">
@@ -54,7 +54,7 @@ const Register = () => {
             <input
               type={showPassword ? "text" : "password"}
               className="py-3 px-8 bg-secondary-900 w-full outline-none rounded-lg"
-              placeholder="Contraseña"
+              placeholder="Password"
             />
             {showPassword ? (
               <RiEyeLine
@@ -77,7 +77,7 @@ const Register = () => {
             <input
               type={showPassword ? "text" : "password"}
               className="py-3 px-8 bg-secondary-900 w-full outline-none rounded-lg"
-              placeholder="Confirmar contraseña"
+              placeholder="Confirm password"
             />
             {showPassword ? (
               <RiEyeLine
@@ -100,20 +100,26 @@ const Register = () => {
               type="submit"
               className="bg-primary text-black uppercase font-bold text-sm w-full py-3 px-4 rounded-lg " /* hover:text-gray-100 transition-colors */
             >
-              Registrarme
+              Register me
             </button>
           </div>
         </form>
 
         <span className="flex items-center justify-center gap-2">
-          ¿Ya tienes cuenta?{" "}
+          Already have an account?
           <Link
             to="/login"
             className="text-primary/80 hover:text-gray-100 transition-colors"
           >
-            Ingresa
+            Log in
           </Link>
         </span>
+        <Link
+          to="/"
+          className="flex items-center justify-center hover:text-primary transition-colors"
+        >
+          Back to start
+        </Link>
       </div>
     </div>
   );

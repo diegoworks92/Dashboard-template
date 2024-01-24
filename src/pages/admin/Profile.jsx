@@ -3,11 +3,14 @@ import {
   RiErrorWarningLine,
   RiShieldCheckLine,
 } from "react-icons/ri";
+import { PiPlugsConnectedFill } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import { Switch } from "@headlessui/react";
 import { useState } from "react";
 const Profile = () => {
   const [enabled, setEnabled] = useState(false);
+  const [enabled2, setEnabled2] = useState(false);
+  const [enabled3, setEnabled3] = useState(false);
   return (
     <>
       {/* Profile  */}
@@ -186,14 +189,14 @@ const Profile = () => {
         <hr className="my-8 border-gray-500/30" />
         <div className="flex flex-col md:flex-row gap-4 items-center bg-green-600/10 p-4 rounded-lg border border-dashed border-green-600 mb-8">
           <div className="flex justify-center">
-            <RiShieldCheckLine className="text-5xl text-green-600" />
+            <PiPlugsConnectedFill className="text-5xl text-green-600" />
           </div>
           <div className="flex-1">
             <p className="text-gray-500">
               Two-factor authentication adds an extra layer of security to your
               account. To log in, in you'll need to provide a 4 digit amazing
               code.{" "}
-              <Link to="/" className="text-green-400">
+              <Link to="" className="text-blue-500">
                 Learn More
               </Link>
             </p>
@@ -248,16 +251,16 @@ const Profile = () => {
             </div>
             <div>
               <Switch
-                checked={enabled}
-                onChange={setEnabled}
+                checked={enabled2}
+                onChange={setEnabled2}
                 className={`${
-                  enabled ? "bg-primary" : "bg-secondary-900"
+                  enabled2 ? "bg-primary" : "bg-secondary-900"
                 } relative inline-flex h-6 w-11 items-center rounded-full`}
               >
                 <span className="sr-only">Enable notifications</span>
                 <span
                   className={`${
-                    enabled
+                    enabled2
                       ? "translate-x-6 bg-secondary-900"
                       : "translate-x-1 bg-gray-500"
                   } inline-block h-4 w-4 transform rounded-full transition`}
@@ -281,16 +284,16 @@ const Profile = () => {
             </div>
             <div>
               <Switch
-                checked={enabled}
-                onChange={setEnabled}
+                checked={enabled3}
+                onChange={setEnabled3}
                 className={`${
-                  enabled ? "bg-primary" : "bg-secondary-900"
+                  enabled3 ? "bg-primary" : "bg-secondary-900"
                 } relative inline-flex h-6 w-11 items-center rounded-full`}
               >
                 <span className="sr-only">Enable notifications</span>
                 <span
                   className={`${
-                    enabled
+                    enabled3
                       ? "translate-x-6 bg-secondary-900"
                       : "translate-x-1 bg-gray-500"
                   } inline-block h-4 w-4 transform rounded-full transition`}
@@ -386,7 +389,7 @@ const Profile = () => {
             <p className="text-gray-500">
               For extra security, this requires you to confirm your email or
               phone number when you reset yousignr password.{" "}
-              <Link to="/" className="text-blue-500">
+              <Link to="" className="text-blue-500">
                 Learn More
               </Link>
             </p>
