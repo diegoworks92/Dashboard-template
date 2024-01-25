@@ -1,22 +1,19 @@
 import { useState } from "react";
-import SocialMedia from "./sidebar/SocialMedia";
+
 import { Link } from "react-router-dom";
 import {
   RiBarChart2Line,
-  RiEarthLine,
   RiMessage3Line,
   RiCalendarTodoLine,
   RiLogoutCircleRLine,
-  RiArrowRightSLine,
   RiMenu3Line,
   RiCloseLine,
-  RiCustomerService2Line,
+  RiHome6Line,
 } from "react-icons/ri";
 import SidebarButtons from "./sidebar/SidebarButtons";
 import SidebarAccordion from "./sidebar/SidebarAccordion";
 const Sidebar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  /*   const [showSubmenu, setShowSubmenu] = useState(false); */
 
   return (
     <>
@@ -26,41 +23,32 @@ const Sidebar = () => {
         } transition-all`}
       >
         <div>
-          {/*           <h1 className="text-center text-2xl font-bold text-white mb-10">
-            Admin <span className="text-primary text-4xl">.</span>
-          </h1> */}
           <div className="flex justify-center">
             <Link to="/">
               <img
                 src="logo.ico"
                 alt="company logo"
-                className="w-16 h-10 mb-10 mt-3 object-cover hover:cursor-pointer"
+                className="w-20 h-16 mb-10 mt-3 object-cover hover:cursor-pointer"
               />
             </Link>
           </div>
           <ul>
-            <SidebarButtons />
-
-            {/*             <li>
-              <button
-                onClick={() => setShowSubmenu(!showSubmenu)}
-                className="w-full flex items-center justify-between py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors"
-              >
-                <span className="flex items-center gap-4">
-                  <RiEarthLine className="text-primary" /> Social media
-                </span>
-                <RiArrowRightSLine
-                  className={`mt-1 ${
-                    showSubmenu && "rotate-90"
-                  } transition-all`}
-                />
-              </button>
-
-              <SocialMedia showSubmenu={showSubmenu} />
-            </li> */}
-            <SidebarAccordion
-            /*               setShowSubmenu={setShowSubmenu}
-              showSubmenu={showSubmenu} */
+            <SidebarButtons
+              icon={<RiHome6Line className="text-primary" />}
+              name="Home"
+            />
+            <SidebarAccordion />
+            <SidebarButtons
+              icon={<RiBarChart2Line className="text-primary" />}
+              name="Analytic"
+            />
+            <SidebarButtons
+              icon={<RiMessage3Line className="text-primary" />}
+              name="Message"
+            />
+            <SidebarButtons
+              icon={<RiCalendarTodoLine className="text-primary" />}
+              name="Schedule"
             />
           </ul>
         </div>

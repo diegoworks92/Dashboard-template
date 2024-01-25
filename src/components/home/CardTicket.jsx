@@ -45,8 +45,6 @@ const CardTicket = (props) => {
               </MenuButton>
             }
             align="end"
-            /*             arrow
-            arrowClassName="bg-secondary-100" */
             transition
             menuClassName="bg-secondary-100 p-4"
           >

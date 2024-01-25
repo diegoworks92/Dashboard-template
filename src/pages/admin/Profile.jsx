@@ -37,7 +37,7 @@ const Profile = () => {
                 <input type="file" id="avatar" className="hidden" />
               </div>
               <p className="text-gray-500 text-sm">
-                Allowed file types: png,jpg,jpeg
+                Allowed file types: png, jpg, jpeg
               </p>
             </div>
           </div>

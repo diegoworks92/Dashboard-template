@@ -1,6 +1,5 @@
 import { Disclosure, Transition } from "@headlessui/react";
 import { RiArrowRightSLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
 
 const Faq = () => {
   return (
@@ -23,7 +22,7 @@ const Faq = () => {
             <Disclosure>
               <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
                 <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:text-primary ui-open:transform transition-all" />{" "}
-                How does it work?
+                <p>How does it work?</p>
               </Disclosure.Button>
               <Transition
                 enter="transition duration-100 ease-out"
@@ -46,7 +45,9 @@ const Faq = () => {
             <Disclosure>
               <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
                 <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:text-primary ui-open:transform transition-all" />{" "}
-                Do I need a designer to use Admin Theme?
+                <p className="text-base sm:text-lg">
+                  Do I need a designer to use Admin Theme?
+                </p>
               </Disclosure.Button>
               <Transition
                 enter="transition duration-100 ease-out"

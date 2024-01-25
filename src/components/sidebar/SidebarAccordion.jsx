@@ -7,8 +7,6 @@ import SocialMedia from "./SocialMedia";
 import { useState } from "react";
 
 const SidebarAccordion = () => {
-  /*   const [showSubmenu, setShowSubmenu] = useState(false); */
-
   const [activeSubmenu, setActiveSubmenu] = useState(null);
 
   const handleButton = (id) => {
@@ -48,8 +46,7 @@ const SidebarAccordion = () => {
                 } transition-all`}
               />
             </button>
-            {/*               <ul className={`my-2 ${!showSubmenu && "hidden"}`}> */}
-            {/*  <SocialMedia showSubmenu={showSubmenu} /> */}
+
             {data.children}
           </li>
         );

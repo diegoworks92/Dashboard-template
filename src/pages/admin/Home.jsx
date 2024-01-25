@@ -1,7 +1,5 @@
-import { Link } from "react-router-dom";
 import CardTicket from "../../components/home/CardTicket";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
-import { Menu, MenuItem, MenuButton } from "@szhsin/react-menu";
 import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/slide.css";
 import MostRecentTickets from "../../components/home/MostRecentTickets";

@@ -1,8 +1,3 @@
-# React + Vite
+This project is a Dashboard developed with React and Tailwind. It includes sections for login, registration, password recovery, support, tickets, and profile.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![img_dashboard](https://github.com/diegoworks92/Dashboard-template/assets/155651264/39b198bd-5bad-4cbf-b218-f2c6625dd2cb)

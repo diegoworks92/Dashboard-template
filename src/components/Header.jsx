@@ -27,7 +27,6 @@ const Header = () => {
           }
           transition
           align="center"
-          /* arrow */
           menuClassName="bg-secondary-100 p-4"
         >
           <h1 className="text-gray-300 text-center font-medium">
@@ -109,8 +108,6 @@ const Header = () => {
             </MenuButton>
           }
           align="end"
-          /* arrow */
-          /*           arrowClassName="bg-secondary-100" */
           transition
           menuClassName="bg-secondary-100 p-4"
         >
